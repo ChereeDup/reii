@@ -36,13 +36,13 @@
             //close the connection
             mysqli_close($conn);
             if($user[0]['pat_role']=="Government"){
-                header('Location: government.php');
+                header('Location: http://35.223.253.147/reii/government.php');
             }elseif($user[0]['pat_role']=="Doctor"){
-                header('Location: doctor.php');
+                header('Location: http://35.223.253.147/reii/doctor.php');
             }elseif($user[0]['pat_role']=="Pharmacists"){
-                header('Location: pharmacist.php');
+                header('Location: http://35.223.253.147/reii/pharmacist.php');
             }elseif($user[0]['pat_role']=="Patient"){
-                header('Location: patient.php');
+                header('Location: http://35.223.253.147/reii/patient.php');
             }
             
             // print_r($use);
